@@ -36,11 +36,11 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            txtNombre = new TextBox();
+            txtCorreo = new TextBox();
+            txtContrasena = new TextBox();
             btnRegistrar = new Button();
-            maskedTextBox1 = new MaskedTextBox();
+            txtTelefono = new MaskedTextBox();
             panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)picMinimizarR).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picCerrarR).BeginInit();
@@ -131,32 +131,32 @@
             label5.TabIndex = 7;
             label5.Text = "CONTRASEÑA:";
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(121, 19);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(323, 27);
-            textBox1.TabIndex = 9;
+            txtNombre.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNombre.Location = new Point(121, 19);
+            txtNombre.Margin = new Padding(3, 4, 3, 4);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(323, 27);
+            txtNombre.TabIndex = 9;
             // 
-            // textBox3
+            // txtCorreo
             // 
-            textBox3.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(121, 152);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(323, 27);
-            textBox3.TabIndex = 11;
+            txtCorreo.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCorreo.Location = new Point(121, 152);
+            txtCorreo.Margin = new Padding(3, 4, 3, 4);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Size = new Size(323, 27);
+            txtCorreo.TabIndex = 11;
             // 
-            // textBox4
+            // txtContrasena
             // 
-            textBox4.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.Location = new Point(121, 219);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(323, 27);
-            textBox4.TabIndex = 12;
+            txtContrasena.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            txtContrasena.Location = new Point(121, 219);
+            txtContrasena.Margin = new Padding(3, 4, 3, 4);
+            txtContrasena.Name = "txtContrasena";
+            txtContrasena.Size = new Size(323, 27);
+            txtContrasena.TabIndex = 12;
             // 
             // btnRegistrar
             // 
@@ -169,31 +169,32 @@
             btnRegistrar.TabIndex = 14;
             btnRegistrar.Text = "REGISTRAR";
             btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
-            // maskedTextBox1
+            // txtTelefono
             // 
-            maskedTextBox1.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox1.Location = new Point(121, 86);
-            maskedTextBox1.Margin = new Padding(3, 4, 3, 4);
-            maskedTextBox1.Mask = "0000-0000";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(77, 27);
-            maskedTextBox1.TabIndex = 15;
-            maskedTextBox1.TextAlign = HorizontalAlignment.Right;
+            txtTelefono.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            txtTelefono.Location = new Point(121, 86);
+            txtTelefono.Margin = new Padding(3, 4, 3, 4);
+            txtTelefono.Mask = "0000-0000";
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(77, 27);
+            txtTelefono.TabIndex = 15;
+            txtTelefono.TextAlign = HorizontalAlignment.Right;
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(194, 194, 194);
             panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtNombre);
             panel1.Controls.Add(btnRegistrar);
-            panel1.Controls.Add(maskedTextBox1);
-            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(txtTelefono);
+            panel1.Controls.Add(txtCorreo);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(textBox4);
+            panel1.Controls.Add(txtContrasena);
             panel1.Location = new Point(60, 508);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
@@ -235,11 +236,11 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txtNombre;
+        private TextBox txtCorreo;
+        private TextBox txtContrasena;
         private Button btnRegistrar;
-        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox txtTelefono;
         private Panel panel1;
     }
 }

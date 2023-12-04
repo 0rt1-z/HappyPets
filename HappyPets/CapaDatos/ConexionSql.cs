@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Net;
 using Microsoft.Data.SqlClient;
 
 
@@ -15,7 +16,7 @@ namespace CapaDatos
         private readonly string _connectionString;
         public ConexionSql()
         {
-            _connectionString = "SERVER=3RNEST0;DataBase=HappyPets; integrated security=true;TrustServerCertificate=true";
+            _connectionString = "SERVER=DESKTOP-BA0JQ0C;DataBase=HappyPets; integrated security=true;TrustServerCertificate=true";
         }
 
         //Metodo protegido para obtener la conexion
