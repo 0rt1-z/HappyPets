@@ -34,3 +34,15 @@ C:\Users\ernes\OneDrive\Documentos\HappyPets-Main\HappyPets\CapaDatos\obj\Debug\
 C:\Users\ernes\OneDrive\Documentos\HappyPets-Main\HappyPets\CapaDatos\obj\Debug\net7.0\refint\CapaDatos.dll
 C:\Users\ernes\OneDrive\Documentos\HappyPets-Main\HappyPets\CapaDatos\obj\Debug\net7.0\CapaDatos.pdb
 C:\Users\ernes\OneDrive\Documentos\HappyPets-Main\HappyPets\CapaDatos\obj\Debug\net7.0\ref\CapaDatos.dll
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\bin\Debug\net7.0\CapaDatos.deps.json
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\bin\Debug\net7.0\CapaDatos.dll
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\bin\Debug\net7.0\CapaDatos.pdb
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\CapaDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\CapaDatos.AssemblyInfoInputs.cache
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\CapaDatos.AssemblyInfo.cs
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\CapaDatos.dll
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\refint\CapaDatos.dll
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\CapaDatos.pdb
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\ref\CapaDatos.dll

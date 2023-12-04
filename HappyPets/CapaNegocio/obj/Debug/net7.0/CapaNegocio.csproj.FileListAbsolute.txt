@@ -28,3 +28,18 @@ C:\Users\ernes\OneDrive\Documentos\HappyPets-Main\HappyPets\CapaNegocio\obj\Debu
 C:\Users\ernes\OneDrive\Documentos\HappyPets-Main\HappyPets\CapaNegocio\obj\Debug\net7.0\refint\CapaNegocio.dll
 C:\Users\ernes\OneDrive\Documentos\HappyPets-Main\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.pdb
 C:\Users\ernes\OneDrive\Documentos\HappyPets-Main\HappyPets\CapaNegocio\obj\Debug\net7.0\ref\CapaNegocio.dll
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\bin\Debug\net7.0\CapaNegocio.deps.json
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\bin\Debug\net7.0\CapaNegocio.dll
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\bin\Debug\net7.0\CapaNegocio.pdb
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\bin\Debug\net7.0\CapaDatos.dll
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\bin\Debug\net7.0\CapaDatos.pdb
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.AssemblyInfoInputs.cache
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.AssemblyInfo.cs
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.csproj.CopyComplete
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.dll
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\refint\CapaNegocio.dll
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.pdb
+C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\ref\CapaNegocio.dll
