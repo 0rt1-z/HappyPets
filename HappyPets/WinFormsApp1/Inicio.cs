@@ -43,7 +43,7 @@ namespace CapaPresentacion
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void cONSULTASToolStripMenuItem_Click(object sender, EventArgs e)
@@ -53,12 +53,17 @@ namespace CapaPresentacion
 
         private void vACUNACIONToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            mostrarFormularios(new Vacunacion());   
+            mostrarFormularios(new Vacunacion());
         }
 
         private void bAÑOSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mostrarFormularios(new Bano());
+        }
+
+        private void btnCerrarApp_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
