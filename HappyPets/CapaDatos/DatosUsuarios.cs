@@ -18,10 +18,10 @@ namespace CapaDatos
             using (var conexion = GetConnection())
             {
                 conexion.Open();
-                using (SqlCommand command = new SqlCommand("select * From Usuarios where NombreLogin = @usuario and Contraseña = @contraseña", conexion))
+                using (SqlCommand command = new SqlCommand("select * From Usuario where Correo = @usuario and Contraseña = @contraseña", conexion))
                 {
                     command.Parameters.AddWithValue("@usuario", username);
-                    command.Parameters.AddWithValue("contraseña", password);
+                    command.Parameters.AddWithValue("@contraseña", password);
                   
                     using(SqlDataReader reader = command.ExecuteReader())
                     if (reader.HasRows)
