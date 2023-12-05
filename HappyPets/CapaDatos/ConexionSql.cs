@@ -16,7 +16,7 @@ namespace CapaDatos
         private readonly string _connectionString;
         public ConexionSql()
         {
-            _connectionString = "SERVER=MARVIN_GOMEZ;DataBase=HappyPets; integrated security=true;TrustServerCertificate=true";
+            _connectionString = "SERVER="+Dns.GetHostName()+";DataBase=HappyPets; integrated security=true;TrustServerCertificate=true";
         }
 
         //Metodo protegido para obtener la conexion

@@ -13,25 +13,15 @@ namespace CapaDatos
     {
         public string nombre, telefono, correo, contrasena;
 
-        public bool Login(string username, string password)
+        public bool Login(string username)
         {
-            using (var conexion = GetConnection())
-            {
-                conexion.Open();
-                using (SqlCommand command = new SqlCommand("select * From Usuario where Correo = @usuario and Contraseña = @contraseña", conexion))
-                {
-                    command.Parameters.AddWithValue("@usuario", username);
-                    command.Parameters.AddWithValue("@contraseña", password);
-                  
-                    using(SqlDataReader reader = command.ExecuteReader())
-                    if (reader.HasRows)
-                    {
-                        return true;
-                    }
-                    else
-                        return false;
-                }
-            }
+            using var conexion = GetConnection();
+            conexion.Open();
+            using SqlCommand command = new SqlCommand("select * From Usuario where Correo = @usuario", conexion);
+            command.Parameters.AddWithValue("@usuario", username);
+            using SqlDataReader reader = command.ExecuteReader();
+
+            return reader.HasRows;
         }
 
         public int RegistroUsuario(DatosUsuarios usuario) 
@@ -46,6 +36,25 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@contrasena", usuario.contrasena);
             int resultado = cmd.ExecuteNonQuery();
             return resultado;
+        }
+
+        public string CompararContrasena(string username)
+        {
+            string contrasenaUsuario = "";
+
+            using var conexion = GetConnection();
+            conexion.Open();
+            SqlDataReader reader;
+            using SqlCommand cmd = new SqlCommand("select * From Usuario where Correo = @usuario", conexion);
+            cmd.Parameters.AddWithValue("@usuario", username);
+            reader = cmd.ExecuteReader();
+       
+            while (reader.Read())
+            {
+                contrasenaUsuario = reader["Contraseña"].ToString();
+            }
+
+            return contrasenaUsuario;
         }
 
         public bool ExisteCorreo(string correo)

@@ -10,9 +10,20 @@ namespace CapaNegocio
     public class ModeloUsuario
     {
         DatosUsuarios datosUsuarios = new DatosUsuarios();
+        Password pass = new Password();
+
         public bool LoginUsuarios(string username , string password)
         {
-            return datosUsuarios.Login(username, password);
+            bool existeUsuario = datosUsuarios.Login(username);
+
+            if (existeUsuario)
+            {
+                return datosUsuarios.CompararContrasena(username) == pass.Encriptar(password);
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public string RegistrarUsuario(DatosUsuarios usuario)
@@ -29,6 +40,7 @@ namespace CapaNegocio
                 } 
                 else
                 {
+                    usuario.contrasena = pass.Encriptar(usuario.contrasena);
                     datosUsuarios.RegistroUsuario(usuario);
                 }
             }
