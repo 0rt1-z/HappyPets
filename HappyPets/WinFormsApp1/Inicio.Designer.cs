@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panelEscritorio = new Panel();
             menuStrip1 = new MenuStrip();
             toolStripMenuItem1 = new ToolStripMenuItem();
             rEGISTROToolStripMenuItem = new ToolStripMenuItem();
@@ -41,19 +40,27 @@
             nUEVACITAToolStripMenuItem = new ToolStripMenuItem();
             panel1 = new Panel();
             btnCerrarApp = new Button();
+            btnMUPublicaciones = new Button();
+            grpPOne = new GroupBox();
+            lblTextOne = new Label();
+            picImageOne = new PictureBox();
+            grpPTwo = new GroupBox();
+            lblTextTwo = new Label();
+            picImageTwo = new PictureBox();
+            grpPThree = new GroupBox();
+            lblTextThree = new Label();
+            picImageThree = new PictureBox();
+            panelEscritorio = new Panel();
             menuStrip1.SuspendLayout();
             panel1.SuspendLayout();
+            grpPOne.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picImageOne).BeginInit();
+            grpPTwo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picImageTwo).BeginInit();
+            grpPThree.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picImageThree).BeginInit();
+            panelEscritorio.SuspendLayout();
             SuspendLayout();
-            // 
-            // panelEscritorio
-            // 
-            panelEscritorio.BorderStyle = BorderStyle.Fixed3D;
-            panelEscritorio.Location = new Point(12, 95);
-            panelEscritorio.Margin = new Padding(3, 4, 3, 4);
-            panelEscritorio.Name = "panelEscritorio";
-            panelEscritorio.Size = new Size(1233, 898);
-            panelEscritorio.TabIndex = 1;
-            panelEscritorio.Paint += panelEscritorio_Paint;
             // 
             // menuStrip1
             // 
@@ -119,14 +126,15 @@
             // 
             aGENDAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nUEVACITAToolStripMenuItem });
             aGENDAToolStripMenuItem.Name = "aGENDAToolStripMenuItem";
-            aGENDAToolStripMenuItem.Size = new Size(83, 24);
-            aGENDAToolStripMenuItem.Text = "AGENDA";
+            aGENDAToolStripMenuItem.Size = new Size(115, 24);
+            aGENDAToolStripMenuItem.Text = "PUBLICACION";
             // 
             // nUEVACITAToolStripMenuItem
             // 
             nUEVACITAToolStripMenuItem.Name = "nUEVACITAToolStripMenuItem";
-            nUEVACITAToolStripMenuItem.Size = new Size(173, 26);
-            nUEVACITAToolStripMenuItem.Text = "NUEVA CITA";
+            nUEVACITAToolStripMenuItem.Size = new Size(235, 26);
+            nUEVACITAToolStripMenuItem.Text = "NUEVA PUBLICACION";
+            nUEVACITAToolStripMenuItem.Click += nUEVACITAToolStripMenuItem_Click;
             // 
             // panel1
             // 
@@ -151,6 +159,113 @@
             btnCerrarApp.UseVisualStyleBackColor = true;
             btnCerrarApp.Click += btnCerrarApp_Click;
             // 
+            // btnMUPublicaciones
+            // 
+            btnMUPublicaciones.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnMUPublicaciones.ImageAlign = ContentAlignment.BottomLeft;
+            btnMUPublicaciones.Location = new Point(455, 10);
+            btnMUPublicaciones.Name = "btnMUPublicaciones";
+            btnMUPublicaciones.Size = new Size(316, 52);
+            btnMUPublicaciones.TabIndex = 0;
+            btnMUPublicaciones.Text = "Mostrar Ultimas Publicaciones";
+            btnMUPublicaciones.UseVisualStyleBackColor = true;
+            btnMUPublicaciones.Click += btnMUPublicaciones_Click;
+            // 
+            // grpPOne
+            // 
+            grpPOne.Controls.Add(lblTextOne);
+            grpPOne.Controls.Add(picImageOne);
+            grpPOne.Location = new Point(369, 100);
+            grpPOne.Name = "grpPOne";
+            grpPOne.Size = new Size(491, 168);
+            grpPOne.TabIndex = 1;
+            grpPOne.TabStop = false;
+            grpPOne.Visible = false;
+            // 
+            // lblTextOne
+            // 
+            lblTextOne.Location = new Point(170, 26);
+            lblTextOne.Name = "lblTextOne";
+            lblTextOne.Size = new Size(315, 136);
+            lblTextOne.TabIndex = 1;
+            // 
+            // picImageOne
+            // 
+            picImageOne.Location = new Point(6, 26);
+            picImageOne.Name = "picImageOne";
+            picImageOne.Size = new Size(141, 136);
+            picImageOne.SizeMode = PictureBoxSizeMode.StretchImage;
+            picImageOne.TabIndex = 0;
+            picImageOne.TabStop = false;
+            // 
+            // grpPTwo
+            // 
+            grpPTwo.Controls.Add(lblTextTwo);
+            grpPTwo.Controls.Add(picImageTwo);
+            grpPTwo.Location = new Point(369, 340);
+            grpPTwo.Name = "grpPTwo";
+            grpPTwo.Size = new Size(491, 168);
+            grpPTwo.TabIndex = 2;
+            grpPTwo.TabStop = false;
+            grpPTwo.Visible = false;
+            // 
+            // lblTextTwo
+            // 
+            lblTextTwo.Location = new Point(170, 26);
+            lblTextTwo.Name = "lblTextTwo";
+            lblTextTwo.Size = new Size(315, 136);
+            lblTextTwo.TabIndex = 1;
+            // 
+            // picImageTwo
+            // 
+            picImageTwo.Location = new Point(6, 26);
+            picImageTwo.Name = "picImageTwo";
+            picImageTwo.Size = new Size(141, 136);
+            picImageTwo.SizeMode = PictureBoxSizeMode.StretchImage;
+            picImageTwo.TabIndex = 0;
+            picImageTwo.TabStop = false;
+            // 
+            // grpPThree
+            // 
+            grpPThree.Controls.Add(lblTextThree);
+            grpPThree.Controls.Add(picImageThree);
+            grpPThree.Location = new Point(369, 580);
+            grpPThree.Name = "grpPThree";
+            grpPThree.Size = new Size(491, 168);
+            grpPThree.TabIndex = 3;
+            grpPThree.TabStop = false;
+            grpPThree.Visible = false;
+            // 
+            // lblTextThree
+            // 
+            lblTextThree.Location = new Point(170, 26);
+            lblTextThree.Name = "lblTextThree";
+            lblTextThree.Size = new Size(315, 136);
+            lblTextThree.TabIndex = 1;
+            // 
+            // picImageThree
+            // 
+            picImageThree.Location = new Point(6, 26);
+            picImageThree.Name = "picImageThree";
+            picImageThree.Size = new Size(141, 136);
+            picImageThree.SizeMode = PictureBoxSizeMode.StretchImage;
+            picImageThree.TabIndex = 0;
+            picImageThree.TabStop = false;
+            // 
+            // panelEscritorio
+            // 
+            panelEscritorio.BorderStyle = BorderStyle.Fixed3D;
+            panelEscritorio.Controls.Add(grpPThree);
+            panelEscritorio.Controls.Add(grpPTwo);
+            panelEscritorio.Controls.Add(grpPOne);
+            panelEscritorio.Controls.Add(btnMUPublicaciones);
+            panelEscritorio.Location = new Point(12, 95);
+            panelEscritorio.Margin = new Padding(3, 4, 3, 4);
+            panelEscritorio.Name = "panelEscritorio";
+            panelEscritorio.Size = new Size(1233, 898);
+            panelEscritorio.TabIndex = 1;
+            panelEscritorio.Paint += panelEscritorio_Paint;
+            // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -169,23 +284,39 @@
             menuStrip1.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            grpPOne.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picImageOne).EndInit();
+            grpPTwo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picImageTwo).EndInit();
+            grpPThree.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picImageThree).EndInit();
+            panelEscritorio.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelEscritorio;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem rEGISTROToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mASCOTASToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sERVICIOSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cONSULTASToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vACUNACIONToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bAÑOSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aGENDAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nUEVACITAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private Panel panel1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem rEGISTROToolStripMenuItem;
+        private ToolStripMenuItem mASCOTASToolStripMenuItem;
+        private ToolStripMenuItem sERVICIOSToolStripMenuItem;
+        private ToolStripMenuItem cONSULTASToolStripMenuItem;
+        private ToolStripMenuItem vACUNACIONToolStripMenuItem;
+        private ToolStripMenuItem bAÑOSToolStripMenuItem;
+        private ToolStripMenuItem aGENDAToolStripMenuItem;
+        private ToolStripMenuItem nUEVACITAToolStripMenuItem;
+        private ToolStripMenuItem toolStripMenuItem1;
         private Button btnCerrarApp;
+        private Button btnMUPublicaciones;
+        private GroupBox grpPOne;
+        private Label lblTextOne;
+        private PictureBox picImageOne;
+        private GroupBox grpPTwo;
+        private Label lblTextTwo;
+        private PictureBox picImageTwo;
+        private GroupBox grpPThree;
+        private Label lblTextThree;
+        private PictureBox picImageThree;
+        private Panel panelEscritorio;
     }
 }
