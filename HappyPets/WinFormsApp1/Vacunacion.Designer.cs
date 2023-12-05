@@ -36,11 +36,11 @@
             txtNombre = new TextBox();
             txtRaza = new TextBox();
             txtEdad = new TextBox();
-            txtTipoVacuna = new TextBox();
+            txtPeso = new TextBox();
             calFechaVacuna = new MonthCalendar();
             label5 = new Label();
             label6 = new Label();
-            textBox5 = new TextBox();
+            txtTipoVacuna = new TextBox();
             btnGuardar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -48,10 +48,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.perro2;
-            pictureBox1.Location = new Point(64, 128);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(56, 96);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(245, 336);
+            pictureBox1.Size = new Size(214, 252);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -59,117 +58,111 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(327, 176);
+            label1.Location = new Point(286, 132);
             label1.Name = "label1";
-            label1.Size = new Size(73, 20);
+            label1.Size = new Size(59, 15);
             label1.TabIndex = 1;
             label1.Text = "NOMBRE:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(330, 246);
+            label2.Location = new Point(289, 184);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(40, 15);
             label2.TabIndex = 2;
             label2.Text = "RAZA:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(328, 321);
+            label3.Location = new Point(287, 241);
             label3.Name = "label3";
-            label3.Size = new Size(52, 20);
+            label3.Size = new Size(40, 15);
             label3.TabIndex = 3;
             label3.Text = "EDAD:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(782, 176);
+            label4.Location = new Point(684, 132);
             label4.Name = "label4";
-            label4.Size = new Size(47, 20);
+            label4.Size = new Size(38, 15);
             label4.TabIndex = 4;
             label4.Text = "PESO:";
             // 
             // txtNombre
             // 
             txtNombre.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtNombre.Location = new Point(466, 172);
-            txtNombre.Margin = new Padding(3, 4, 3, 4);
+            txtNombre.Location = new Point(408, 129);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(241, 28);
+            txtNombre.Size = new Size(211, 24);
             txtNombre.TabIndex = 5;
             // 
             // txtRaza
             // 
             txtRaza.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtRaza.Location = new Point(466, 231);
-            txtRaza.Margin = new Padding(3, 4, 3, 4);
+            txtRaza.Location = new Point(408, 173);
             txtRaza.Name = "txtRaza";
-            txtRaza.Size = new Size(241, 28);
+            txtRaza.Size = new Size(211, 24);
             txtRaza.TabIndex = 6;
             // 
             // txtEdad
             // 
             txtEdad.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEdad.Location = new Point(466, 306);
-            txtEdad.Margin = new Padding(3, 4, 3, 4);
+            txtEdad.Location = new Point(408, 230);
             txtEdad.Name = "txtEdad";
-            txtEdad.Size = new Size(241, 28);
+            txtEdad.Size = new Size(211, 24);
             txtEdad.TabIndex = 7;
             // 
-            // txtTipoVacuna
+            // txtPeso
             // 
-            txtTipoVacuna.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtTipoVacuna.Location = new Point(908, 168);
-            txtTipoVacuna.Margin = new Padding(3, 4, 3, 4);
-            txtTipoVacuna.Name = "txtTipoVacuna";
-            txtTipoVacuna.Size = new Size(241, 28);
-            txtTipoVacuna.TabIndex = 8;
+            txtPeso.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPeso.Location = new Point(794, 126);
+            txtPeso.Name = "txtPeso";
+            txtPeso.Size = new Size(211, 24);
+            txtPeso.TabIndex = 8;
             // 
             // calFechaVacuna
             // 
-            calFechaVacuna.Location = new Point(466, 400);
-            calFechaVacuna.Margin = new Padding(9, 11, 9, 11);
+            calFechaVacuna.Location = new Point(408, 300);
+            calFechaVacuna.Margin = new Padding(8, 8, 8, 8);
             calFechaVacuna.Name = "calFechaVacuna";
             calFechaVacuna.TabIndex = 9;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(330, 400);
+            label5.Location = new Point(289, 300);
             label5.Name = "label5";
-            label5.Size = new Size(57, 20);
+            label5.Size = new Size(47, 15);
             label5.TabIndex = 10;
             label5.Text = "FECHA:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(757, 248);
+            label6.Location = new Point(662, 186);
             label6.Name = "label6";
-            label6.Size = new Size(128, 20);
+            label6.Size = new Size(102, 15);
             label6.TabIndex = 11;
             label6.Text = "TIPO DE VACUNA:";
             // 
-            // textBox5
+            // txtTipoVacuna
             // 
-            textBox5.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(908, 239);
-            textBox5.Margin = new Padding(3, 4, 3, 4);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(241, 28);
-            textBox5.TabIndex = 12;
+            txtTipoVacuna.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtTipoVacuna.Location = new Point(794, 179);
+            txtTipoVacuna.Name = "txtTipoVacuna";
+            txtTipoVacuna.Size = new Size(211, 24);
+            txtTipoVacuna.TabIndex = 12;
             // 
             // btnGuardar
             // 
             btnGuardar.Cursor = Cursors.Hand;
             btnGuardar.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnGuardar.Location = new Point(919, 500);
-            btnGuardar.Margin = new Padding(3, 4, 3, 4);
+            btnGuardar.Location = new Point(804, 375);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(181, 102);
+            btnGuardar.Size = new Size(158, 76);
             btnGuardar.TabIndex = 13;
             btnGuardar.Text = "GUARDAR";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -177,16 +170,16 @@
             // 
             // Vacunacion
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(105, 155, 247);
-            ClientSize = new Size(1233, 899);
+            ClientSize = new Size(1079, 591);
             Controls.Add(btnGuardar);
-            Controls.Add(textBox5);
+            Controls.Add(txtTipoVacuna);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(calFechaVacuna);
-            Controls.Add(txtTipoVacuna);
+            Controls.Add(txtPeso);
             Controls.Add(txtEdad);
             Controls.Add(txtRaza);
             Controls.Add(txtNombre);
@@ -196,7 +189,6 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Vacunacion";
             Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -214,11 +206,11 @@
         private TextBox txtNombre;
         private TextBox txtRaza;
         private TextBox txtEdad;
-        private TextBox txtTipoVacuna;
+        private TextBox txtPeso;
         private MonthCalendar calFechaVacuna;
         private Label label5;
         private Label label6;
-        private TextBox textBox5;
+        private TextBox txtTipoVacuna;
         private Button btnGuardar;
     }
 }

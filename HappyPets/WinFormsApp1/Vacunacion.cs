@@ -25,7 +25,7 @@ namespace CapaPresentacion
             try
             {
                 if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtEdad.Text)
-                    || string.IsNullOrEmpty(txtTipoVacuna.Text) || string.IsNullOrEmpty(txtTipoVacuna.Text)
+                    || string.IsNullOrEmpty(txtPeso.Text) || string.IsNullOrEmpty(txtTipoVacuna.Text)
                     || string.IsNullOrEmpty(txtRaza.Text) || string.IsNullOrEmpty(calFechaVacuna.SelectionStart.ToString())
                 )
                 {
@@ -37,7 +37,7 @@ namespace CapaPresentacion
                     datosVacunacion.nombre = txtNombre.Text;
                     datosVacunacion.raza = txtRaza.Text;
                     datosVacunacion.edad = Convert.ToInt32(txtEdad.Text);
-                    datosVacunacion.peso = Convert.ToDouble(txtTipoVacuna.Text);
+                    datosVacunacion.peso = Convert.ToDouble(txtPeso.Text);
                     datosVacunacion.tipo_vacuna = txtTipoVacuna.Text;
                     datosVacunacion.fecha = calFechaVacuna.SelectionStart;
 
