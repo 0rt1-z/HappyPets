@@ -19,13 +19,14 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
         {
             try
             {
                 if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtEdad.Text)
-                    || string.IsNullOrEmpty(txtPeso.Text) || string.IsNullOrEmpty(txtTipoVacuna.Text)
-                    || string.IsNullOrEmpty(txtRaza.Text)|| string.IsNullOrEmpty(calFechaVacuna.SelectionStart.ToString())
+                    || string.IsNullOrEmpty(txtTipoVacuna.Text) || string.IsNullOrEmpty(txtTipoVacuna.Text)
+                    || string.IsNullOrEmpty(txtRaza.Text) || string.IsNullOrEmpty(calFechaVacuna.SelectionStart.ToString())
                 )
                 {
                     MessageBox.Show("Todos los campos son obligatorios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -36,8 +37,8 @@ namespace CapaPresentacion
                     datosVacunacion.nombre = txtNombre.Text;
                     datosVacunacion.raza = txtRaza.Text;
                     datosVacunacion.edad = Convert.ToInt32(txtEdad.Text);
-                    datosVacunacion.peso = Convert.ToDouble(txtPeso.Text);
-                    datosVacunacion.tipo_vacuna= txtTipoVacuna.Text;
+                    datosVacunacion.peso = Convert.ToDouble(txtTipoVacuna.Text);
+                    datosVacunacion.tipo_vacuna = txtTipoVacuna.Text;
                     datosVacunacion.fecha = calFechaVacuna.SelectionStart;
 
                     ModeloVacunacion vacunacion = new ModeloVacunacion();
@@ -50,7 +51,7 @@ namespace CapaPresentacion
                     else
                     {
                         MessageBox.Show("datos registrados", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                       
+
                     }
                 }
             }
@@ -58,6 +59,7 @@ namespace CapaPresentacion
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
     }
 }
