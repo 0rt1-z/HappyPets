@@ -2022,19 +2022,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marvi\\.nuget\\packages\\": {}
+    "C:\\Users\\Oporto\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj",
+      "projectUniqueName": "C:\\Users\\Oporto\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj",
       "projectName": "CapaNegocio",
-      "projectPath": "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj",
-      "packagesPath": "C:\\Users\\marvi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaNegocio\\obj\\",
+      "projectPath": "C:\\Users\\Oporto\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj",
+      "packagesPath": "C:\\Users\\Oporto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Oporto\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaNegocio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\marvi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Oporto\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2048,8 +2048,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {
-              "projectPath": "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj"
+            "C:\\Users\\Oporto\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {
+              "projectPath": "C:\\Users\\Oporto\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj"
             }
           }
         }
