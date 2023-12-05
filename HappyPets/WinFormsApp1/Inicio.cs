@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaDatos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -64,6 +65,85 @@ namespace CapaPresentacion
         private void btnCerrarApp_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nUEVACITAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Publicacion fr = new Publicacion();
+            Hide();
+            fr.ShowDialog();
+            Show();
+        }
+
+        private void btnMUPublicaciones_Click(object sender, EventArgs e)
+        {
+            grpPOne.Visible = true;
+            grpPTwo.Visible = true;
+            grpPThree.Visible = true;
+            MostrarUltimasPublicaciones();
+        }
+
+        private void MostrarUltimasPublicaciones()
+        {
+            try
+            {
+                DatosPublicacion datosPublicacion = new DatosPublicacion();
+                var ultimasPublicaciones = datosPublicacion.ObtenerUltimasPublicaciones();
+
+                // Ocultar todos los GroupBox al principio
+                grpPOne.Visible = false;
+                grpPTwo.Visible = false;
+                grpPThree.Visible = false;
+
+                // Verificar la cantidad de registros y mostrar los GroupBox correspondientes
+                if (ultimasPublicaciones.Count >= 1)
+                {
+                    grpPOne.Visible = true;
+                    lblTextOne.Text = ultimasPublicaciones[0].texto;
+                    picImageOne.Image = ConvertirBytesAImagen(ultimasPublicaciones[0].foto);
+                    btnMUPublicaciones.Text = "Actualizar Ultimas Publicaciones";
+                }
+
+                if (ultimasPublicaciones.Count >= 2)
+                {
+                    grpPTwo.Visible = true;
+                    lblTextTwo.Text = ultimasPublicaciones[1].texto;
+                    picImageTwo.Image = ConvertirBytesAImagen(ultimasPublicaciones[1].foto);
+                }
+
+                if (ultimasPublicaciones.Count >= 3)
+                {
+                    grpPThree.Visible = true;
+                    lblTextThree.Text = ultimasPublicaciones[2].texto;
+                    picImageThree.Image = ConvertirBytesAImagen(ultimasPublicaciones[2].foto);
+                }
+
+                // Mostrar mensaje de error si no hay datos
+                if (ultimasPublicaciones.Count == 0)
+                {
+                    throw new Exception("No hay publicaciones disponibles.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private Image ConvertirBytesAImagen(byte[] bytes)
+        {
+            if (bytes == null)
+                return null;
+
+            using (MemoryStream ms = new MemoryStream(bytes))
+            {
+                return Image.FromStream(ms);
+            }
         }
     }
 }
