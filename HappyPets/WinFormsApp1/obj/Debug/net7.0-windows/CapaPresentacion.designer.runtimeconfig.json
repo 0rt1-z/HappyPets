@@ -13,7 +13,7 @@
     ],
     "additionalProbingPaths": [
       "C:\\Users\\marvi\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Dennis Alexander\\.nuget\\packages"
+      "C:\\Users\\marvi\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
