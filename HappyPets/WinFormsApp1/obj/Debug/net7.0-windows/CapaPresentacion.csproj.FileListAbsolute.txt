@@ -260,3 +260,4 @@ C:\Users\Oporto\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\n
 C:\Users\Oporto\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.pdb
 C:\Users\Oporto\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.genruntimeconfig.cache
 C:\Users\Oporto\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\ref\CapaPresentacion.dll
+C:\Users\marvi\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Publicacion.resources

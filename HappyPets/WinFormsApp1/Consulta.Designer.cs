@@ -37,7 +37,7 @@
             rchComentarioConsulta = new RichTextBox();
             label4 = new Label();
             txtnombreMascota = new TextBox();
-            button1 = new Button();
+            btnGuardar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -125,17 +125,18 @@
             txtnombreMascota.Size = new Size(185, 27);
             txtnombreMascota.TabIndex = 8;
             // 
-            // button1
+            // btnGuardar
             // 
-            button1.Cursor = Cursors.Hand;
-            button1.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(374, 761);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(143, 82);
-            button1.TabIndex = 9;
-            button1.Text = "GUARDAR";
-            button1.UseVisualStyleBackColor = true;
+            btnGuardar.Cursor = Cursors.Hand;
+            btnGuardar.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btnGuardar.Location = new Point(374, 761);
+            btnGuardar.Margin = new Padding(3, 4, 3, 4);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(143, 82);
+            btnGuardar.TabIndex = 9;
+            btnGuardar.Text = "GUARDAR";
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // Consulta
             // 
@@ -143,7 +144,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(105, 155, 247);
             ClientSize = new Size(1233, 899);
-            Controls.Add(button1);
+            Controls.Add(btnGuardar);
             Controls.Add(txtnombreMascota);
             Controls.Add(label4);
             Controls.Add(rchComentarioConsulta);
@@ -173,6 +174,6 @@
         private RichTextBox rchComentarioConsulta;
         private Label label4;
         private TextBox txtnombreMascota;
-        private Button button1;
+        private Button btnGuardar;
     }
 }

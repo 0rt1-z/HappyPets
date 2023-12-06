@@ -60,6 +60,10 @@ namespace CapaPresentacion
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            this.Hide();
+            
+            Inicio inicio = new Inicio();
+            inicio.Show();
         }
     }
 }
