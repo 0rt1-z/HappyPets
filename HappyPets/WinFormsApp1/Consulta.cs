@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaDatos;
+using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +22,50 @@ namespace CapaPresentacion
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtnombreMascota.Text) || string.IsNullOrEmpty(txtEdadMascota.Text)
+                    || string.IsNullOrEmpty(txtPesoMascota.Text)|| string.IsNullOrEmpty(rchComentarioConsulta.Text)
+                    
+                )
+                {
+                    MessageBox.Show("Todos los campos son obligatorios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    DatosConsulta datosConsulta = new DatosConsulta();
+                    datosConsulta.nombre = txtnombreMascota.Text;
+                    datosConsulta.edad = Convert.ToInt32(txtEdadMascota.Text);
+                    datosConsulta.peso= Convert.ToDouble(txtPesoMascota.Text);
+                    datosConsulta.MotivoConsulta = rchComentarioConsulta.Text;
+
+                    ModeloConsulta consulta = new ModeloConsulta();
+                    string respuesta = consulta.RegistrarConsulta(datosConsulta);
+
+                    if (respuesta.Length > 0)
+                    {
+                        MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("datos registrados", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            this.Hide();
+
+            Inicio inicio = new Inicio();
+            inicio.Show();
         }
     }
 }
