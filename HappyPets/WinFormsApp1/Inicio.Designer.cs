@@ -181,6 +181,7 @@
             grpPOne.TabIndex = 1;
             grpPOne.TabStop = false;
             grpPOne.Visible = false;
+            grpPOne.Enter += grpPOne_Enter;
             // 
             // lblTextOne
             // 

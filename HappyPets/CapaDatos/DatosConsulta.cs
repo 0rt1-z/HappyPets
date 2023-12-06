@@ -10,7 +10,7 @@ namespace CapaDatos
     public class DatosConsulta : ConexionSql
     {
         public string nombre, MotivoConsulta;
-        public int edad;
+        public int edad, id_usuario;
         public double peso;
 
         public int RegistroConsulta(DatosConsulta consulta)
@@ -18,11 +18,12 @@ namespace CapaDatos
             using var conexion = GetConnection();
             conexion.Open();
 
-            using var cmd = new SqlCommand("INSERT INTO Consulta (Nombre,Edad,Peso,Motivo_Consulta) VALUES(@Nombre,@Edad,@Peso,@Motivo_Consulta)", conexion);
+            using var cmd = new SqlCommand("INSERT INTO Consulta (Nombre,Edad,Peso,Motivo_Consulta,Id_usuario) VALUES(@Nombre,@Edad,@Peso,@Motivo_Consulta,@Id_usuario)", conexion);
             cmd.Parameters.AddWithValue("@Nombre", consulta.nombre);
             cmd.Parameters.AddWithValue("@Edad", consulta.edad);
             cmd.Parameters.AddWithValue("@Peso", consulta.peso);
             cmd.Parameters.AddWithValue("@Motivo_Consulta", consulta.MotivoConsulta);
+            cmd.Parameters.AddWithValue("@Id_usuario", consulta.id_usuario);
             int resultado = cmd.ExecuteNonQuery();
             return resultado;
         }

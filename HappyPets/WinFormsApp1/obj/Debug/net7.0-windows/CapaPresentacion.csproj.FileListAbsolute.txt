@@ -189,7 +189,6 @@ C:\Users\marvi\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\bin\Debug\ne
 C:\Users\marvi\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.csproj.AssemblyReference.cache
 C:\Users\marvi\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Bano.resources
 C:\Users\marvi\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Consulta.resources
-C:\Users\marvi\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.DatosMascotas.resources
 C:\Users\marvi\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Inicio.resources
 C:\Users\marvi\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Form1.resources
 C:\Users\marvi\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.NuevoRegistro.resources
@@ -315,3 +314,4 @@ C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windo
 C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.csproj.CopyComplete
 C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.genruntimeconfig.cache
 C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\ref\CapaPresentacion.dll
+C:\Users\marvi\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.RegistroMascotas.resources

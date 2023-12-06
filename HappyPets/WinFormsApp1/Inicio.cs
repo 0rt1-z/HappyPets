@@ -107,7 +107,7 @@ namespace CapaPresentacion
                     grpPOne.Visible = true;
                     grpPOne.Text = ultimasPublicaciones[0].correo;
                     lblTextOne.Text = ultimasPublicaciones[0].texto;
-                    picImageOne.Image = ConvertirBytesAImagen(ultimasPublicaciones[0].foto);               
+                    picImageOne.Image = ConvertirBytesAImagen(ultimasPublicaciones[0].foto);
                     btnMUPublicaciones.Text = "Actualizar Ultimas Publicaciones";
                 }
 
@@ -148,6 +148,11 @@ namespace CapaPresentacion
             {
                 return Image.FromStream(ms);
             }
+        }
+
+        private void grpPOne_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

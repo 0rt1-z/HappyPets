@@ -14,6 +14,7 @@ namespace CapaPresentacion
 {
     public partial class Consulta : Form
     {
+
         public Consulta()
         {
             InitializeComponent();
@@ -29,8 +30,8 @@ namespace CapaPresentacion
             try
             {
                 if (string.IsNullOrEmpty(txtnombreMascota.Text) || string.IsNullOrEmpty(txtEdadMascota.Text)
-                    || string.IsNullOrEmpty(txtPesoMascota.Text)|| string.IsNullOrEmpty(rchComentarioConsulta.Text)
-                    
+                    || string.IsNullOrEmpty(txtPesoMascota.Text) || string.IsNullOrEmpty(rchComentarioConsulta.Text)
+
                 )
                 {
                     MessageBox.Show("Todos los campos son obligatorios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -40,8 +41,9 @@ namespace CapaPresentacion
                     DatosConsulta datosConsulta = new DatosConsulta();
                     datosConsulta.nombre = txtnombreMascota.Text;
                     datosConsulta.edad = Convert.ToInt32(txtEdadMascota.Text);
-                    datosConsulta.peso= Convert.ToDouble(txtPesoMascota.Text);
+                    datosConsulta.peso = Convert.ToDouble(txtPesoMascota.Text);
                     datosConsulta.MotivoConsulta = rchComentarioConsulta.Text;
+                    datosConsulta.id_usuario = Session.idUsuario;
 
                     ModeloConsulta consulta = new ModeloConsulta();
                     string respuesta = consulta.RegistrarConsulta(datosConsulta);
@@ -53,7 +55,10 @@ namespace CapaPresentacion
                     else
                     {
                         MessageBox.Show("datos registrados", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
 
+                        Inicio inicio = new Inicio();
+                        inicio.Show();
                     }
                 }
             }
@@ -61,11 +66,6 @@ namespace CapaPresentacion
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            this.Hide();
-
-            Inicio inicio = new Inicio();
-            inicio.Show();
         }
     }
 }
