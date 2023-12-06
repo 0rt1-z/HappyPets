@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Oporto\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {}
+    "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Oporto\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {
+    "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oporto\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj",
+        "projectUniqueName": "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj",
         "projectName": "CapaDatos",
-        "projectPath": "C:\\Users\\Oporto\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj",
-        "packagesPath": "C:\\Users\\Oporto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oporto\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\obj\\",
+        "projectPath": "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj",
+        "packagesPath": "C:\\Users\\marvi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Oporto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marvi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

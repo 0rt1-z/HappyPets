@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Oporto\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Oporto\\.nuget\\packages"
+      "C:\\Users\\marvi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\marvi\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
