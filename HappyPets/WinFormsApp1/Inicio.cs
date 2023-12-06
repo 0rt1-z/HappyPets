@@ -105,14 +105,16 @@ namespace CapaPresentacion
                 if (ultimasPublicaciones.Count >= 1)
                 {
                     grpPOne.Visible = true;
+                    grpPOne.Text = ultimasPublicaciones[0].correo;
                     lblTextOne.Text = ultimasPublicaciones[0].texto;
-                    picImageOne.Image = ConvertirBytesAImagen(ultimasPublicaciones[0].foto);
+                    picImageOne.Image = ConvertirBytesAImagen(ultimasPublicaciones[0].foto);               
                     btnMUPublicaciones.Text = "Actualizar Ultimas Publicaciones";
                 }
 
                 if (ultimasPublicaciones.Count >= 2)
                 {
                     grpPTwo.Visible = true;
+                    grpPTwo.Text = ultimasPublicaciones[1].correo;
                     lblTextTwo.Text = ultimasPublicaciones[1].texto;
                     picImageTwo.Image = ConvertirBytesAImagen(ultimasPublicaciones[1].foto);
                 }
@@ -120,6 +122,7 @@ namespace CapaPresentacion
                 if (ultimasPublicaciones.Count >= 3)
                 {
                     grpPThree.Visible = true;
+                    grpPThree.Text = ultimasPublicaciones[2].correo;
                     lblTextThree.Text = ultimasPublicaciones[2].texto;
                     picImageThree.Image = ConvertirBytesAImagen(ultimasPublicaciones[2].foto);
                 }
