@@ -75,3 +75,11 @@ C:\Users\Oporto\OneDrive\Escritorio\HappyPets\HappyPets\CapaNegocio\obj\Debug\ne
 C:\Users\Oporto\OneDrive\Escritorio\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\refint\CapaNegocio.dll
 C:\Users\Oporto\OneDrive\Escritorio\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.pdb
 C:\Users\Oporto\OneDrive\Escritorio\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\ref\CapaNegocio.dll
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.AssemblyInfoInputs.cache
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.AssemblyInfo.cs
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.dll
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\refint\CapaNegocio.dll
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.pdb

@@ -262,3 +262,21 @@ C:\Users\Oporto\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\n
 C:\Users\Oporto\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\ref\CapaPresentacion.dll
 C:\Users\marvi\OneDrive\Escritorio\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Publicacion.resources
 C:\Users\Dennis Alexander\Desktop\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Publicacion.resources
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Bano.resources
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Consulta.resources
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.DatosMascotas.resources
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Inicio.resources
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Form1.resources
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.NuevoRegistro.resources
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Properties.Resources.resources
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Publicacion.resources
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.Vacunacion.resources
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.AssemblyInfoInputs.cache
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.AssemblyInfo.cs
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.dll
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\refint\CapaPresentacion.dll
+C:\Users\javii\Downloads\HappyPets\HappyPets\WinFormsApp1\obj\Debug\net7.0-windows\CapaPresentacion.pdb
