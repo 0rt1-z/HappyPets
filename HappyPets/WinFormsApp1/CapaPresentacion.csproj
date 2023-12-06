@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj" />
     <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj" />
   </ItemGroup>
 
@@ -19,7 +20,7 @@
     <Compile Update="Consulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DatosMascotas.cs">
+    <Compile Update="RegistroMascotas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Inicio.cs">

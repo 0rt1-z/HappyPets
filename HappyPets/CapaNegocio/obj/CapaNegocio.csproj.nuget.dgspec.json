@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj": {}
+    "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {
+    "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj",
+        "projectUniqueName": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj",
         "projectName": "CapaDatos",
-        "projectPath": "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj",
-        "packagesPath": "C:\\Users\\Dennis Alexander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaDatos\\obj\\",
+        "projectPath": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj",
+        "packagesPath": "C:\\Users\\javii\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaDatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dennis Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\javii\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,17 +65,17 @@
         }
       }
     },
-    "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj": {
+    "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj",
+        "projectUniqueName": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj",
         "projectName": "CapaNegocio",
-        "projectPath": "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj",
-        "packagesPath": "C:\\Users\\Dennis Alexander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaNegocio\\obj\\",
+        "projectPath": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj",
+        "packagesPath": "C:\\Users\\javii\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaNegocio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dennis Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\javii\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,8 +89,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {
-                "projectPath": "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj"
+              "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {
+                "projectPath": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj"
               }
             }
           }

@@ -8,7 +8,7 @@ namespace CapaNegocio
 {
     public class Session
     {
-        public int idUsuario;
-        public string nombre, correo;
+        public static int idUsuario;
+        public static string nombre, correo;
     }
 }

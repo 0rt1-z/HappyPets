@@ -11,7 +11,6 @@ namespace CapaNegocio
     {
         DatosUsuarios datosUsuarios = new DatosUsuarios();
         Password pass = new Password();
-        Session session = new Session();
 
         public bool LoginUsuarios(string username , string password)
         {
@@ -23,9 +22,9 @@ namespace CapaNegocio
 
                 if (datosUsuarios.CompararContrasena(username) == pass.Encriptar(password))
                 {
-                    session.idUsuario = us.id;
-                    session.nombre = us.nombre;
-                    session.correo = us.correo;
+                    Session.idUsuario = us.id;
+                    Session.nombre = us.nombre;
+                    Session.correo = us.correo;
                     return true;
                 }
                 else

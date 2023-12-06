@@ -2036,23 +2036,24 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
+      "CapaDatos >= 1.0.0",
       "CapaNegocio >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dennis Alexander\\.nuget\\packages\\": {}
+    "C:\\Users\\javii\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\WinFormsApp1\\CapaPresentacion.csproj",
+      "projectUniqueName": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\WinFormsApp1\\CapaPresentacion.csproj",
       "projectName": "CapaPresentacion",
-      "projectPath": "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\WinFormsApp1\\CapaPresentacion.csproj",
-      "packagesPath": "C:\\Users\\Dennis Alexander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\WinFormsApp1\\obj\\",
+      "projectPath": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\WinFormsApp1\\CapaPresentacion.csproj",
+      "packagesPath": "C:\\Users\\javii\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\WinFormsApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dennis Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\javii\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2066,8 +2067,11 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj": {
-              "projectPath": "C:\\Users\\Dennis Alexander\\Desktop\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj"
+            "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {
+              "projectPath": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj"
+            },
+            "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj": {
+              "projectPath": "C:\\Users\\javii\\Downloads\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj"
             }
           }
         }
