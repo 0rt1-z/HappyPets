@@ -13,15 +13,17 @@ namespace CapaDatos
     {
         public string texto;
         public byte[] foto;
+        public int id_usuario;
 
         public int AgregarPublicacion(DatosPublicacion publicacion)
         {
             using var conexion = GetConnection();
             conexion.Open();
 
-            using var cmd = new SqlCommand("INSERT INTO Publicacion (Texto, Foto) VALUES(@texto, @foto)", conexion);
+            using var cmd = new SqlCommand("INSERT INTO Publicacion (Texto, Foto, Id_usuario) VALUES(@texto, @foto, @Id_usuario)", conexion);
             cmd.Parameters.AddWithValue("@Texto", publicacion.texto);
             cmd.Parameters.AddWithValue("@Foto", publicacion.foto);
+            cmd.Parameters.AddWithValue("@Id_usuario", publicacion.id_usuario);
             int resultado = cmd.ExecuteNonQuery();
             return resultado;
         }

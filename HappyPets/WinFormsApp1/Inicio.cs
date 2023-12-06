@@ -74,10 +74,11 @@ namespace CapaPresentacion
 
         private void nUEVACITAToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Publicacion fr = new Publicacion();
-            Hide();
-            fr.ShowDialog();
-            Show();
+            //Publicacion fr = new Publicacion();
+            //Hide();
+            //fr.ShowDialog();
+            //Show();
+            mostrarFormularios(new Publicacion());
         }
 
         private void btnMUPublicaciones_Click(object sender, EventArgs e)
