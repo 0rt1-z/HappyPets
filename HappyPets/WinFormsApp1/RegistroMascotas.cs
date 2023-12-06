@@ -14,7 +14,6 @@ namespace CapaPresentacion
 {
     public partial class RegistroMascotas : Form
     {
-        Session session= new Session();
         public RegistroMascotas()
         {
             InitializeComponent();
@@ -47,7 +46,7 @@ namespace CapaPresentacion
                     datosMascotas.tipo = txtTipo.Text;
                     datosMascotas.color = txtColor.Text;
                     datosMascotas.altura = Convert.ToDouble(txtAltura.Text);
-                    datosMascotas.id_usuario = session.idUsuario;
+                    datosMascotas.id_usuario = Session.idUsuario;
 
 
                     ModeloMascota mascota = new ModeloMascota();
