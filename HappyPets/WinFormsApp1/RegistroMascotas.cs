@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class DatosMascotas : Form
+    public partial class RegistroMascotas : Form
     {
         Session session= new Session();
-        public DatosMascotas()
+        public RegistroMascotas()
         {
             InitializeComponent();
         }
@@ -46,7 +46,7 @@ namespace CapaPresentacion
                     datosMascotas.peso = Convert.ToDouble(txtPeso.Text);
                     datosMascotas.tipo = txtTipo.Text;
                     datosMascotas.color = txtColor.Text;
-                    datosMascotas.txtAltura = Convert.ToDouble(txtAltura.Text);
+                    datosMascotas.altura = Convert.ToDouble(txtAltura.Text);
                     datosMascotas.id_usuario = session.idUsuario;
 
 

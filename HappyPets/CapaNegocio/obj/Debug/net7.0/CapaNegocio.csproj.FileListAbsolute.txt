@@ -83,3 +83,10 @@ C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNe
 C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.dll
 C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\refint\CapaNegocio.dll
 C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.pdb
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\bin\Debug\net7.0\CapaNegocio.deps.json
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\bin\Debug\net7.0\CapaNegocio.dll
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\bin\Debug\net7.0\CapaNegocio.pdb
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\bin\Debug\net7.0\CapaDatos.dll
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\bin\Debug\net7.0\CapaDatos.pdb
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\CapaNegocio.csproj.CopyComplete
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaNegocio\obj\Debug\net7.0\ref\CapaNegocio.dll

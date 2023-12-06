@@ -34,7 +34,7 @@ namespace CapaPresentacion
 
         private void mASCOTASToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            mostrarFormularios(new DatosMascotas());
+            mostrarFormularios(new RegistroMascotas());
         }
 
         private void panelEscritorio_Paint(object sender, PaintEventArgs e)

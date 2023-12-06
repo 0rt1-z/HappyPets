@@ -67,3 +67,7 @@ C:\Users\javii\Downloads\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\CapaDato
 C:\Users\javii\Downloads\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\CapaDatos.dll
 C:\Users\javii\Downloads\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\refint\CapaDatos.dll
 C:\Users\javii\Downloads\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\CapaDatos.pdb
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaDatos\bin\Debug\net7.0\CapaDatos.deps.json
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaDatos\bin\Debug\net7.0\CapaDatos.dll
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaDatos\bin\Debug\net7.0\CapaDatos.pdb
+C:\Users\javii\Downloads\HappyPets\HappyPets\CapaDatos\obj\Debug\net7.0\ref\CapaDatos.dll
