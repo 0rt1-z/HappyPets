@@ -11,6 +11,7 @@ namespace CapaDatos
 {
     public class DatosUsuarios : ConexionSql
     {
+        public int id;
         public string nombre, telefono, correo, contrasena;
 
         public bool Login(string username)
@@ -65,6 +66,30 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@correo", correo);
             bool existe = cmd.ExecuteReader().HasRows;
             return existe;
+        }
+
+        public DatosUsuarios ObtenerDatosSession(string correo)
+        {
+            using var conexion = GetConnection();
+            conexion.Open();
+            SqlDataReader reader;
+            using var cmd = new SqlCommand("SELECT * FROM Usuario WHERE correo = @correo", conexion);
+            cmd.Parameters.AddWithValue("@correo", correo);
+            reader = cmd.ExecuteReader();
+
+            DatosUsuarios? u = null;
+
+            while(reader.Read())
+            {
+                u = new DatosUsuarios
+                {
+                    id = Convert.ToInt32(reader["Id_usuario"].ToString()),
+                    correo = reader["Correo"].ToString(),
+                    nombre = reader["Nombre"].ToString(),
+                };
+            }
+
+            return u;
         }
     }
 }
