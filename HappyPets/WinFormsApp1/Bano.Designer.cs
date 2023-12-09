@@ -35,24 +35,28 @@
             label6 = new Label();
             label7 = new Label();
             pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox5 = new CheckBox();
-            richTextBox1 = new RichTextBox();
+            txtNombre = new TextBox();
+            txtRaza = new TextBox();
+            txtEdad = new TextBox();
+            richComentario = new RichTextBox();
             label2 = new Label();
             button1 = new Button();
+            groupBox1 = new GroupBox();
+            radHembra = new RadioButton();
+            radMacho = new RadioButton();
+            groupBox2 = new GroupBox();
+            radUñas = new RadioButton();
+            radCorte = new RadioButton();
+            radBaño = new RadioButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(419, 78);
+            label1.Location = new Point(453, 72);
             label1.Name = "label1";
             label1.Size = new Size(73, 20);
             label1.TabIndex = 0;
@@ -61,7 +65,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(930, 292);
+            label3.Location = new Point(964, 278);
             label3.Name = "label3";
             label3.Size = new Size(0, 20);
             label3.TabIndex = 2;
@@ -69,7 +73,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(419, 142);
+            label4.Location = new Point(453, 136);
             label4.Name = "label4";
             label4.Size = new Size(50, 20);
             label4.TabIndex = 3;
@@ -78,7 +82,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(419, 228);
+            label5.Location = new Point(453, 222);
             label5.Name = "label5";
             label5.Size = new Size(52, 20);
             label5.TabIndex = 4;
@@ -87,7 +91,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(419, 318);
+            label6.Location = new Point(453, 299);
             label6.Name = "label6";
             label6.Size = new Size(66, 20);
             label6.TabIndex = 5;
@@ -96,7 +100,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(419, 379);
+            label7.Location = new Point(421, 385);
             label7.Name = "label7";
             label7.Size = new Size(160, 20);
             label7.TabIndex = 6;
@@ -105,109 +109,54 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.perro2;
-            pictureBox1.Location = new Point(63, 69);
+            pictureBox1.Location = new Point(139, 70);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(308, 330);
+            pictureBox1.Size = new Size(267, 290);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(563, 69);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(349, 28);
-            textBox1.TabIndex = 8;
+            txtNombre.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNombre.Location = new Point(597, 55);
+            txtNombre.Margin = new Padding(3, 4, 3, 4);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(367, 28);
+            txtNombre.TabIndex = 8;
             // 
-            // textBox2
+            // txtRaza
             // 
-            textBox2.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(563, 142);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(349, 28);
-            textBox2.TabIndex = 9;
+            txtRaza.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtRaza.Location = new Point(597, 128);
+            txtRaza.Margin = new Padding(3, 4, 3, 4);
+            txtRaza.Name = "txtRaza";
+            txtRaza.Size = new Size(367, 28);
+            txtRaza.TabIndex = 9;
             // 
-            // textBox3
+            // txtEdad
             // 
-            textBox3.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(563, 219);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(349, 28);
-            textBox3.TabIndex = 10;
+            txtEdad.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEdad.Location = new Point(597, 205);
+            txtEdad.Margin = new Padding(3, 4, 3, 4);
+            txtEdad.Name = "txtEdad";
+            txtEdad.Size = new Size(367, 28);
+            txtEdad.TabIndex = 10;
             // 
-            // checkBox1
+            // richComentario
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(638, 372);
-            checkBox1.Margin = new Padding(3, 4, 3, 4);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(72, 24);
-            checkBox1.TabIndex = 11;
-            checkBox1.Text = "BAÑO";
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(740, 372);
-            checkBox2.Margin = new Padding(3, 4, 3, 4);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(135, 24);
-            checkBox2.TabIndex = 12;
-            checkBox2.Text = "CORTE DE PELO";
-            checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(891, 372);
-            checkBox3.Margin = new Padding(3, 4, 3, 4);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(153, 24);
-            checkBox3.TabIndex = 13;
-            checkBox3.Text = "LIMADO DE UÑAS";
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(563, 310);
-            checkBox4.Margin = new Padding(3, 4, 3, 4);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(85, 24);
-            checkBox4.TabIndex = 14;
-            checkBox4.Text = "MACHO";
-            checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(693, 310);
-            checkBox5.Margin = new Padding(3, 4, 3, 4);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(91, 24);
-            checkBox5.TabIndex = 15;
-            checkBox5.Text = "HEMBRA";
-            checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.Location = new Point(63, 490);
-            richTextBox1.Margin = new Padding(3, 4, 3, 4);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(661, 310);
-            richTextBox1.TabIndex = 16;
-            richTextBox1.Text = "";
+            richComentario.Location = new Point(139, 461);
+            richComentario.Margin = new Padding(3, 4, 3, 4);
+            richComentario.Name = "richComentario";
+            richComentario.Size = new Size(571, 168);
+            richComentario.TabIndex = 16;
+            richComentario.Text = "";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(101, 451);
+            label2.Location = new Point(139, 437);
             label2.Name = "label2";
             label2.Size = new Size(249, 20);
             label2.TabIndex = 17;
@@ -216,31 +165,105 @@
             // button1
             // 
             button1.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(865, 556);
+            button1.Location = new Point(796, 481);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(168, 130);
             button1.TabIndex = 18;
             button1.Text = "GUARDAR";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(radHembra);
+            groupBox1.Controls.Add(radMacho);
+            groupBox1.Location = new Point(597, 273);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(367, 59);
+            groupBox1.TabIndex = 19;
+            groupBox1.TabStop = false;
+            // 
+            // radHembra
+            // 
+            radHembra.AutoSize = true;
+            radHembra.Location = new Point(201, 23);
+            radHembra.Name = "radHembra";
+            radHembra.Size = new Size(90, 24);
+            radHembra.TabIndex = 1;
+            radHembra.TabStop = true;
+            radHembra.Text = "HEMBRA";
+            radHembra.UseVisualStyleBackColor = true;
+            // 
+            // radMacho
+            // 
+            radMacho.AutoSize = true;
+            radMacho.Location = new Point(29, 22);
+            radMacho.Name = "radMacho";
+            radMacho.Size = new Size(84, 24);
+            radMacho.TabIndex = 0;
+            radMacho.TabStop = true;
+            radMacho.Text = "MACHO";
+            radMacho.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(radUñas);
+            groupBox2.Controls.Add(radCorte);
+            groupBox2.Controls.Add(radBaño);
+            groupBox2.Location = new Point(597, 345);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(367, 66);
+            groupBox2.TabIndex = 20;
+            groupBox2.TabStop = false;
+            // 
+            // radUñas
+            // 
+            radUñas.AutoSize = true;
+            radUñas.Location = new Point(223, 27);
+            radUñas.Name = "radUñas";
+            radUñas.Size = new Size(140, 24);
+            radUñas.TabIndex = 2;
+            radUñas.TabStop = true;
+            radUñas.Text = "CORTE DE UÑAS";
+            radUñas.UseVisualStyleBackColor = true;
+            // 
+            // radCorte
+            // 
+            radCorte.AutoSize = true;
+            radCorte.Location = new Point(98, 30);
+            radCorte.Name = "radCorte";
+            radCorte.Size = new Size(111, 24);
+            radCorte.TabIndex = 1;
+            radCorte.TabStop = true;
+            radCorte.Text = "CORTE PELO";
+            radCorte.UseVisualStyleBackColor = true;
+            // 
+            // radBaño
+            // 
+            radBaño.AutoSize = true;
+            radBaño.Location = new Point(19, 30);
+            radBaño.Name = "radBaño";
+            radBaño.Size = new Size(71, 24);
+            radBaño.TabIndex = 0;
+            radBaño.TabStop = true;
+            radBaño.Text = "BAÑO";
+            radBaño.UseVisualStyleBackColor = true;
             // 
             // Bano
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(105, 155, 247);
-            ClientSize = new Size(1215, 840);
+            ClientSize = new Size(1118, 746);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
             Controls.Add(button1);
             Controls.Add(label2);
-            Controls.Add(richTextBox1);
-            Controls.Add(checkBox5);
-            Controls.Add(checkBox4);
-            Controls.Add(checkBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(richComentario);
+            Controls.Add(txtEdad);
+            Controls.Add(txtRaza);
+            Controls.Add(txtNombre);
             Controls.Add(pictureBox1);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -253,6 +276,10 @@
             Name = "Bano";
             Text = "Bano";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -266,16 +293,21 @@
         private Label label6;
         private Label label7;
         private PictureBox pictureBox1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtNombre;
+        private TextBox txtRaza;
+        private TextBox txtEdad;
         private CheckBox checkBox1;
         private CheckBox checkBox2;
         private CheckBox checkBox3;
-        private CheckBox checkBox4;
-        private CheckBox checkBox5;
-        private RichTextBox richTextBox1;
+        private RichTextBox richComentario;
         private Label label2;
         private Button button1;
+        private GroupBox groupBox1;
+        private RadioButton radHembra;
+        private RadioButton radMacho;
+        private GroupBox groupBox2;
+        private RadioButton radBaño;
+        private RadioButton radCorte;
+        private RadioButton radUñas;
     }
 }
