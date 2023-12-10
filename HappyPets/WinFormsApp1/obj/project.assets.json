@@ -2036,6 +2036,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
+      "CapaDatos >= 1.0.0",
       "CapaNegocio >= 1.0.0"
     ]
   },
@@ -2066,6 +2067,9 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
+            "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj": {
+              "projectPath": "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaDatos\\CapaDatos.csproj"
+            },
             "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj": {
               "projectPath": "C:\\Users\\marvi\\OneDrive\\Escritorio\\HappyPets\\HappyPets\\CapaNegocio\\CapaNegocio.csproj"
             }

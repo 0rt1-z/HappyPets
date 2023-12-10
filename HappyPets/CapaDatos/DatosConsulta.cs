@@ -11,7 +11,7 @@ namespace CapaDatos
     {
         // creacion de variables que se ocuparan para el form consulta
         public string nombre, MotivoConsulta;
-        public int edad;
+        public int edad, id_usuario;
         public double peso;
 
         public int RegistroConsulta(DatosConsulta consulta)
@@ -21,14 +21,6 @@ namespace CapaDatos
             using var conexion = GetConnection(); 
             conexion.Open();
 
-<<<<<<< Updated upstream
-            using var cmd = new SqlCommand("INSERT INTO Consulta (Nombre,Edad,Peso,Motivo_Consulta) VALUES(@Nombre,@Edad,@Peso,@Motivo_Consulta)", conexion);
-            cmd.Parameters.AddWithValue("@Nombre", consulta.nombre);
-            cmd.Parameters.AddWithValue("@Edad", consulta.edad);
-            cmd.Parameters.AddWithValue("@Peso", consulta.peso);
-            cmd.Parameters.AddWithValue("@Motivo_Consulta", consulta.MotivoConsulta);
-            int resultado = cmd.ExecuteNonQuery();
-=======
             // Se crea un comando SQL para insertar datos en la tabla Consulta
             using var cmd = new SqlCommand("INSERT INTO Consulta (Nombre,Edad,Peso,Motivo_Consulta,Id_usuario) VALUES(@Nombre,@Edad,@Peso,@Motivo_Consulta,@Id_usuario)", conexion);
             // Se asignan valores a los parámetros del comando SQL con los datos de la consulta proporcionados
@@ -43,7 +35,6 @@ namespace CapaDatos
             int resultado = cmd.ExecuteNonQuery();// Se ejecuta la consulta y se obtiene el número de filas afectadas
            
             // Se devuelve el número de filas afectadas por la operación de inserción
->>>>>>> Stashed changes
             return resultado;
 
         }

@@ -11,17 +11,19 @@ namespace CapaDatos
 {
     public class DatosPublicacion : ConexionSql
     {
-        public string texto;
+        public string texto, correo;
         public byte[] foto;
+        public int id_usuario;
 
         public int AgregarPublicacion(DatosPublicacion publicacion)
         {
             using var conexion = GetConnection();
             conexion.Open();
 
-            using var cmd = new SqlCommand("INSERT INTO Publicacion (Texto, Foto) VALUES(@texto, @foto)", conexion);
+            using var cmd = new SqlCommand("INSERT INTO Publicacion (Texto, Foto, Id_usuario) VALUES(@texto, @foto, @Id_usuario)", conexion);
             cmd.Parameters.AddWithValue("@Texto", publicacion.texto);
             cmd.Parameters.AddWithValue("@Foto", publicacion.foto);
+            cmd.Parameters.AddWithValue("@Id_usuario", publicacion.id_usuario);
             int resultado = cmd.ExecuteNonQuery();
             return resultado;
         }
@@ -34,8 +36,10 @@ namespace CapaDatos
             using var conexion = GetConnection();
             conexion.Open();
 
-            // Consulta SQL para obtener las últimas 3 filas ordenadas por Id_publicacion de forma descendente
-            string consulta = "SELECT TOP 3 Texto, Foto FROM Publicacion ORDER BY Id_publicacion DESC";
+            string consulta = "SELECT TOP 3 P.Texto, P.Foto, U.Correo " +
+                      "FROM Publicacion P " +
+                      "INNER JOIN Usuario U ON P.Id_usuario = U.Id_usuario " +
+                      "ORDER BY P.Id_publicacion DESC";
 
             // Preparar y ejecutar la consulta SQL de selección
             using var cmd = new SqlCommand(consulta, conexion);
@@ -48,7 +52,8 @@ namespace CapaDatos
                 DatosPublicacion publicacion = new DatosPublicacion
                 {
                     texto = reader["Texto"].ToString(),
-                    foto = (byte[])reader["Foto"]
+                    foto = (byte[])reader["Foto"],
+                    correo = reader["Correo"].ToString()
                 };
                 ultimasPublicaciones.Add(publicacion);
             }

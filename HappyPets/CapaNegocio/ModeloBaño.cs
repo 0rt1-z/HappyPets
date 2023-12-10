@@ -22,7 +22,6 @@ namespace CapaNegocio
                 throw new ArgumentException("Los campos obligatorios no pueden estar vacíos.");
             }
 
-            // Se crea un objeto DatosBaño con los datos recibidos
             DatosBaño datosBaño = new DatosBaño
             {
                 nombre = nombre,
@@ -36,7 +35,7 @@ namespace CapaNegocio
             // Llamada a la capa de datos para registrar los baños.
             DatosBaño capaDatos = new DatosBaño();
             int resultado = capaDatos.RegistrarBaños(datosBaño);
-            return resultado; // Se retorna la operacion a la capa datos
+            return resultado;
         }
     }
 }

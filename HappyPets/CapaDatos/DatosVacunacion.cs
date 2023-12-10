@@ -11,7 +11,7 @@ namespace CapaDatos
     {
         // definimos las variables 
         public string nombre, raza, tipo_vacuna;
-        public int edad;
+        public int edad, id_usuario;
         public double peso;
         public DateTime fecha;
 
@@ -20,18 +20,15 @@ namespace CapaDatos
             using var conexion = GetConnection();
             conexion.Open();
 
-<<<<<<< Updated upstream
-            using var cmd = new SqlCommand("INSERT INTO Cita (Nombre,Raza,Edad,Peso,Tipo_Vacuna,Fecha) VALUES(@Nombre,@Raza,@Edad,@Peso,@Tipo_Vacuna,@Fecha)", conexion);
-=======
-            using var cmd = new SqlCommand("INSERT INTO Cita (Nombre,Raza,Edad,Peso,Tipo_Vacuna,Fecha,Id_usuario) VALUES(@Nombre,@Raza,@Edad,@Peso,@Tipo_Vacuna,@Fecha,@Id_usuario)", conexion);
            // Asignamos los valores a los parametros de la consulta con el objeto creado
->>>>>>> Stashed changes
+            using var cmd = new SqlCommand("INSERT INTO Cita (Nombre,Raza,Edad,Peso,Tipo_Vacuna,Fecha,Id_usuario) VALUES(@Nombre,@Raza,@Edad,@Peso,@Tipo_Vacuna,@Fecha,@Id_usuario)", conexion);
             cmd.Parameters.AddWithValue("@Nombre", vacunacion.nombre );
             cmd.Parameters.AddWithValue("@Raza", vacunacion.raza);
             cmd.Parameters.AddWithValue("@Edad", vacunacion.edad);
             cmd.Parameters.AddWithValue("@Peso", vacunacion.peso);
             cmd.Parameters.AddWithValue("@Tipo_Vacuna", vacunacion.tipo_vacuna);
             cmd.Parameters.AddWithValue("@Fecha", vacunacion.fecha);
+            cmd.Parameters.AddWithValue("@Id_usuario", vacunacion.id_usuario);
             int resultado = cmd.ExecuteNonQuery();
             return resultado;
         }

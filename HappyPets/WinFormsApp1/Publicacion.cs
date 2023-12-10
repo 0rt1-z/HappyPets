@@ -66,6 +66,7 @@ namespace CapaPresentacion
                     datosPublicacion.texto = rtbTextoPublicacion.Text;
                     ImageConverter converter = new ImageConverter();
                     datosPublicacion.foto = (byte[])converter.ConvertTo(picPublicacionImage.Image, typeof(byte[]));
+                    datosPublicacion.id_usuario = Session.idUsuario;
                     ModeloPublicacion publicacion = new ModeloPublicacion();
                     string respuesta = publicacion.AgregarPublicacion(datosPublicacion);
 
@@ -76,7 +77,10 @@ namespace CapaPresentacion
                     else
                     {
                         MessageBox.Show("Publicacion exitosa", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Close();
+                        this.Hide();
+
+                        Inicio inicio = new Inicio();
+                        inicio.Show();
                     }
                 }
             }

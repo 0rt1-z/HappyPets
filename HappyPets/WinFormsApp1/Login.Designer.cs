@@ -35,7 +35,6 @@
             label1 = new Label();
             label2 = new Label();
             btnAcceder = new Button();
-            linkLabel1 = new LinkLabel();
             btnRegistrarL = new Button();
             picMinimizar = new PictureBox();
             picCerrar = new PictureBox();
@@ -72,7 +71,7 @@
             // 
             txtUsuario.BorderStyle = BorderStyle.None;
             txtUsuario.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsuario.Location = new Point(480, 136);
+            txtUsuario.Location = new Point(490, 159);
             txtUsuario.Margin = new Padding(3, 4, 3, 4);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(376, 23);
@@ -83,7 +82,7 @@
             // 
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.Location = new Point(480, 220);
+            txtPassword.Location = new Point(490, 243);
             txtPassword.Margin = new Padding(3, 4, 3, 4);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(376, 23);
@@ -95,7 +94,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial Narrow", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(485, 98);
+            label1.Location = new Point(495, 121);
             label1.Name = "label1";
             label1.Size = new Size(99, 27);
             label1.TabIndex = 3;
@@ -105,7 +104,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial Narrow", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(480, 189);
+            label2.Location = new Point(490, 212);
             label2.Name = "label2";
             label2.Size = new Size(147, 27);
             label2.TabIndex = 4;
@@ -123,16 +122,6 @@
             btnAcceder.Text = "ACCEDER";
             btnAcceder.UseVisualStyleBackColor = true;
             btnAcceder.Click += btnAcceder_Click;
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(575, 311);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(204, 20);
-            linkLabel1.TabIndex = 6;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "¿Has olvidado tu contraseña?";
             // 
             // btnRegistrarL
             // 
@@ -176,7 +165,7 @@
             // lblErrorMensaje
             // 
             lblErrorMensaje.AutoSize = true;
-            lblErrorMensaje.Location = new Point(484, 264);
+            lblErrorMensaje.Location = new Point(494, 287);
             lblErrorMensaje.Name = "lblErrorMensaje";
             lblErrorMensaje.Size = new Size(121, 20);
             lblErrorMensaje.TabIndex = 10;
@@ -193,7 +182,6 @@
             Controls.Add(btnRegistrarL);
             Controls.Add(picMinimizar);
             Controls.Add(picCerrar);
-            Controls.Add(linkLabel1);
             Controls.Add(btnAcceder);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -221,7 +209,6 @@
         private Label label1;
         private Label label2;
         private Button btnAcceder;
-        private LinkLabel linkLabel1;
         private PictureBox picCerrar;
         private PictureBox picMinimizar;
         private PictureBox pictureBox3;

@@ -11,6 +11,7 @@ namespace CapaDatos
 {
     public class DatosUsuarios : ConexionSql
     {
+        public int id;
         public string nombre, telefono, correo, contrasena;
 
         public bool Login(string username) // Método para verificar si el usuario existe para el inicio de sesión
@@ -66,8 +67,7 @@ namespace CapaDatos
             bool existe = cmd.ExecuteReader().HasRows;
             return existe; // Devuelve true si el correo ya existe en la base de datos
         }
-<<<<<<< Updated upstream
-=======
+
 
         public DatosUsuarios ObtenerDatosSession(string correo) // Método para obtener los datos de un usuario específico basado en su correo electrónico
         {
@@ -92,6 +92,5 @@ namespace CapaDatos
 
             return u; // Retorna los datos del usuario encontrados por correo electrónico
         }
->>>>>>> Stashed changes
     }
 }

@@ -12,22 +12,19 @@ namespace CapaNegocio
         DatosUsuarios datosUsuarios = new DatosUsuarios(); // Instancia de la clase DatosUsuarios
         Password pass = new Password(); // Instancia de la clase Password (posiblemente para manejar contraseñas)
 
-        public bool LoginUsuarios(string username , string password)  // Método para iniciar sesión de usuarios
+        public bool LoginUsuarios(string username, string password) 
         {
-            bool existeUsuario = datosUsuarios.Login(username); // Verificar si existe el usuario con el nombre de usuario proporcionado
+            //Validando si existe usuario
+            bool existeUsuario = datosUsuarios.Login(username);
 
             if (existeUsuario)
             {
-<<<<<<< Updated upstream
-                return datosUsuarios.CompararContrasena(username) == pass.Encriptar(password);
-=======
-                // Si el usuario existe, obtener sus datos de sesión
+                //Onteniendo datos de usuario para registrarlos en sesion
                 DatosUsuarios us = datosUsuarios.ObtenerDatosSession(username);
 
-                // Verificar si la contraseña encriptada coincide con la contraseña proporcionada
+                // Comparando contraseña ingresada por el usuario con la de la BD
                 if (datosUsuarios.CompararContrasena(username) == pass.Encriptar(password))
                 {
-                    // Si coinciden, se asignan los datos de usuario a la sesión y se retorna true
                     Session.idUsuario = us.id;
                     Session.nombre = us.nombre;
                     Session.correo = us.correo;
@@ -35,14 +32,11 @@ namespace CapaNegocio
                 }
                 else
                 {
-                    // Si no coinciden retorna false 
                     return false;
                 }
->>>>>>> Stashed changes
             }
             else
             {
-                // y si el usuario no existe retornara false
                 return false;
             }
         }

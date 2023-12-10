@@ -40,6 +40,7 @@ namespace CapaPresentacion
                     datosVacunacion.peso = Convert.ToDouble(txtPeso.Text);
                     datosVacunacion.tipo_vacuna = txtTipoVacuna.Text;
                     datosVacunacion.fecha = calFechaVacuna.SelectionStart;
+                    datosVacunacion.id_usuario = Session.idUsuario;
 
                     ModeloVacunacion vacunacion = new ModeloVacunacion();
                     string respuesta = vacunacion.RegistrarVacuna(datosVacunacion);
@@ -51,7 +52,11 @@ namespace CapaPresentacion
                     else
                     {
                         MessageBox.Show("datos registrados", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        
+                        this.Hide();
 
+                        Inicio inicio = new Inicio();
+                        inicio.Show();
                     }
                 }
             }
@@ -59,11 +64,6 @@ namespace CapaPresentacion
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            this.Hide();
-            
-            Inicio inicio = new Inicio();
-            inicio.Show();
         }
     }
 }
