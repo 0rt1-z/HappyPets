@@ -9,16 +9,16 @@ namespace CapaNegocio
 {
     public class ModeloConsulta
     {
-
+        // Creación de una instancia de DatosConsulta para utilizar en esta clase
         DatosConsulta DatosConsulta = new DatosConsulta();
 
-        public string RegistrarConsulta(DatosConsulta consulta)
+        public string RegistrarConsulta(DatosConsulta consulta) // Método para registrar una consulta
         {
-            string respuesta = "";
+            string respuesta = ""; // Variable para almacenar la respuesta
 
             try
             {
-                DatosConsulta.RegistroConsulta(consulta);
+                DatosConsulta.RegistroConsulta(consulta); // Se intenta registrar la consulta llamando al método RegistroConsulta de DatosConsulta
             }
             catch (Exception ex)
             {

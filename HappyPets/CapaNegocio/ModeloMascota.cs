@@ -7,17 +7,18 @@ using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    public class ModeloVacunacion
+    public class ModeloMascota
     {
-        DatosVacunacion datosVacunacion = new DatosVacunacion(); // Instancia de la clase DatosVacunacion
+        // Creación de una instancia de DatosMascotas para utilizar en esta clase
+        DatosMascotas datosMascotas = new DatosMascotas();
 
-        public string RegistrarVacuna(DatosVacunacion vacunacion) // Método para registrar una vacunación
+        public string RegistrarMascota(DatosMascotas mascota) // Método para registrar una mascota
         {
             string respuesta = "";
 
             try
             {
-                datosVacunacion.RegistroVacunacion(vacunacion);
+                datosMascotas.RegistroMascotas(mascota);
             }
             catch (Exception ex)
             {
@@ -25,6 +26,6 @@ namespace CapaNegocio
             }
             return respuesta;
         }
-        
+
     }
 }

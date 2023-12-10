@@ -42,10 +42,7 @@ namespace CapaPresentacion
 
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void cONSULTASToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -145,5 +142,19 @@ namespace CapaPresentacion
                 return Image.FromStream(ms);
             }
         }
+<<<<<<< Updated upstream
+=======
+
+        private void grpPOne_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iNICIOtoolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Inicio inicio = new Inicio();
+            inicio.Show();
+        }
+>>>>>>> Stashed changes
     }
 }

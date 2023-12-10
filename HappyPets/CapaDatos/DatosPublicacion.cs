@@ -26,8 +26,9 @@ namespace CapaDatos
             return resultado;
         }
 
-        public List<DatosPublicacion> ObtenerUltimasPublicaciones()
+        public List<DatosPublicacion> ObtenerUltimasPublicaciones()  // Método para obtener las últimas publicaciones desde la base de datos
         {
+            // Lista para almacenar las últimas publicaciones obtenidas desde la base de datos
             List<DatosPublicacion> ultimasPublicaciones = new List<DatosPublicacion>();
 
             using var conexion = GetConnection();
@@ -36,11 +37,14 @@ namespace CapaDatos
             // Consulta SQL para obtener las últimas 3 filas ordenadas por Id_publicacion de forma descendente
             string consulta = "SELECT TOP 3 Texto, Foto FROM Publicacion ORDER BY Id_publicacion DESC";
 
+            // Preparar y ejecutar la consulta SQL de selección
             using var cmd = new SqlCommand(consulta, conexion);
             using var reader = cmd.ExecuteReader();
 
+            // Leer los resultados de la consulta y almacenarlos en la lista de últimas publicaciones
             while (reader.Read())
             {
+                // Crear un objeto DatosPublicacion para cada fila y asignar valores desde el resultado de la consulta
                 DatosPublicacion publicacion = new DatosPublicacion
                 {
                     texto = reader["Texto"].ToString(),
