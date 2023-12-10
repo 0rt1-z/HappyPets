@@ -9,9 +9,9 @@ namespace CapaNegocio
 {
     public class ModeloVacunacion
     {
-        DatosVacunacion datosVacunacion = new DatosVacunacion();
+        DatosVacunacion datosVacunacion = new DatosVacunacion(); // Instancia de la clase DatosVacunacion
 
-        public string RegistrarVacuna(DatosVacunacion vacunacion)
+        public string RegistrarVacuna(DatosVacunacion vacunacion) // Método para registrar una vacunación
         {
             string respuesta = "";
 

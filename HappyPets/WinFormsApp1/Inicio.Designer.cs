@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
-            toolStripMenuItem1 = new ToolStripMenuItem();
+            iNICIOtoolStripMenuItem1 = new ToolStripMenuItem();
             rEGISTROToolStripMenuItem = new ToolStripMenuItem();
             mASCOTASToolStripMenuItem = new ToolStripMenuItem();
             sERVICIOSToolStripMenuItem = new ToolStripMenuItem();
@@ -66,19 +66,19 @@
             // 
             menuStrip1.GripStyle = ToolStripGripStyle.Visible;
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, rEGISTROToolStripMenuItem, sERVICIOSToolStripMenuItem, aGENDAToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { iNICIOtoolStripMenuItem1, rEGISTROToolStripMenuItem, sERVICIOSToolStripMenuItem, aGENDAToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1259, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripMenuItem1
+            // iNICIOtoolStripMenuItem1
             // 
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(66, 24);
-            toolStripMenuItem1.Text = "INICIO";
-            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
+            iNICIOtoolStripMenuItem1.Name = "iNICIOtoolStripMenuItem1";
+            iNICIOtoolStripMenuItem1.Size = new Size(66, 24);
+            iNICIOtoolStripMenuItem1.Text = "INICIO";
+            iNICIOtoolStripMenuItem1.Click += iNICIOtoolStripMenuItem1_Click;
             // 
             // rEGISTROToolStripMenuItem
             // 
@@ -306,7 +306,7 @@
         private ToolStripMenuItem bAÑOSToolStripMenuItem;
         private ToolStripMenuItem aGENDAToolStripMenuItem;
         private ToolStripMenuItem nUEVACITAToolStripMenuItem;
-        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem iNICIOtoolStripMenuItem1;
         private Button btnCerrarApp;
         private Button btnMUPublicaciones;
         private GroupBox grpPOne;

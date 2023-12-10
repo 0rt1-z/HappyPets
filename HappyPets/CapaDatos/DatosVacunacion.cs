@@ -9,16 +9,18 @@ namespace CapaDatos
 {
     public class DatosVacunacion : ConexionSql 
     {
+        // definimos las variables 
         public string nombre, raza, tipo_vacuna;
         public int edad, id_usuario;
         public double peso;
         public DateTime fecha;
 
-        public int RegistroVacunacion(DatosVacunacion vacunacion)
+        public int RegistroVacunacion(DatosVacunacion vacunacion) // Método para registrar información de vacunación en la base de datos
         {
             using var conexion = GetConnection();
             conexion.Open();
 
+           // Asignamos los valores a los parametros de la consulta con el objeto creado
             using var cmd = new SqlCommand("INSERT INTO Cita (Nombre,Raza,Edad,Peso,Tipo_Vacuna,Fecha,Id_usuario) VALUES(@Nombre,@Raza,@Edad,@Peso,@Tipo_Vacuna,@Fecha,@Id_usuario)", conexion);
             cmd.Parameters.AddWithValue("@Nombre", vacunacion.nombre );
             cmd.Parameters.AddWithValue("@Raza", vacunacion.raza);

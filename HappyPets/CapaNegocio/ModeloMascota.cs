@@ -9,9 +9,10 @@ namespace CapaNegocio
 {
     public class ModeloMascota
     {
+        // Creación de una instancia de DatosMascotas para utilizar en esta clase
         DatosMascotas datosMascotas = new DatosMascotas();
 
-        public string RegistrarMascota(DatosMascotas mascota)
+        public string RegistrarMascota(DatosMascotas mascota) // Método para registrar una mascota
         {
             string respuesta = "";
 

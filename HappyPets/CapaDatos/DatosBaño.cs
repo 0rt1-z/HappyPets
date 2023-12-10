@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace CapaDatos
 {
@@ -13,7 +14,7 @@ namespace CapaDatos
         public string nombre, raza, edad, genero, observacion, servicio;
         public int RegistrarBaños(DatosBaño datos)
         {
-            using var conexion = GetConnection();
+            using var conexion = GetConnection(); // Obtiene una conexión utilizando el método de la clase base
             conexion.Open();
             using var cmd = new SqlCommand("INSERT INTO Cuidado(nombre,raza,edad,genero,servicio,observacion ) VALUES (@Nombre, @Raza, @Edad, @Genero, @Servicio, @Observacion)", conexion);
             cmd.Parameters.AddWithValue("@Nombre", datos.nombre);

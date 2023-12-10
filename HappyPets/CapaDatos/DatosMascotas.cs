@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +18,9 @@ namespace CapaDatos
             using var conexion = GetConnection();
             conexion.Open();
 
-            using var cmd = new SqlCommand("INSERT INTO Mascota (Nombre,Edad,Raza,Tipo,Color,Altura,Peso,Id_usuario) VALUES(@Nombre,@Edad,@Raza,@Tipo,@Color,@Altura,@Peso,@Id_usuario)", conexion);
+            using var cmd = new SqlCommand("AgregarMascota", conexion); // Nombre del procedimiento almacenado
+            cmd.CommandType = CommandType.StoredProcedure; // Indica que se está ejecutando un procedimiento almacenado
+
             cmd.Parameters.AddWithValue("@Nombre", mascota.nombre);
             cmd.Parameters.AddWithValue("@Edad", mascota.edad);
             cmd.Parameters.AddWithValue("@Raza", mascota.raza);
@@ -26,6 +29,8 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@Altura", mascota.altura);
             cmd.Parameters.AddWithValue("@Peso", mascota.peso);
             cmd.Parameters.AddWithValue("@Id_usuario", mascota.id_usuario);
+
+            // Ejecuta el procedimiento almacenado
             int resultado = cmd.ExecuteNonQuery();
             return resultado;
         }
